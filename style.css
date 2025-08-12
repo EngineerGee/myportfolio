@@ -546,14 +546,15 @@ footer {
   .navbar {
     display: flex;
     flex-direction: row; /* Keep items in one row */
-    justify-content: space-around; /* Spread items evenly */
+    justify-content: flex-start; /*  */
     flex-wrap: nowrap; /* Prevent wrapping */
     gap: 5px;
   }
 
   .navbar a {
-    font-size: 0.9rem; /* Slightly smaller text */
-    padding: 6px;
+    font-size: 0.8rem; /* Slightly smaller text */
+    padding: 5px;
+    flex-shrink: 0; /* Prevent links from shrinking too small */
   }
 
   header {
@@ -579,7 +580,7 @@ footer {
 
   .navbar a {
     font-size: 0.8rem;
-    padding: 5px;
+    padding: 2px;
   }
 
   .project {
@@ -607,4 +608,5 @@ footer {
     margin-bottom: 10px;
   }
 }
+
 
